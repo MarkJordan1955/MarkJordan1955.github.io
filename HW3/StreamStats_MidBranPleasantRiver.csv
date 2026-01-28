@@ -1,0 +1,73 @@
+StreamStats Output Report,,,,,
+,,,,,
+State/Region ID,ME,,,,
+Latitude,45.38312,,,,
+Longitude,-69.05823,,,,
+Time,1/27/2026, 7:00:07 AM,,,
+,,,,,
+Basin Characteristics,,,,,
+Parameter Code,Parameter Description,Value,Unit,,
+DRNAREA,Area that drains to a point on a stream,26.4,square miles,,
+ELEV,Mean Basin Elevation,898,feet,,
+I24H100Y,Maximum 24-hour precipitation that occurs on average once in 100 years,6.021,inches,,
+I24H10Y,Maximum 24-hour precipitation that occurs on average once in 10 years,4.089,inches,,
+I24H200Y,Maximum 24-hour precipitation that occurs on average once in 200 years,6.65,inches,,
+I24H25Y,Maximum 24-hour precipitation that occurs on average once in 25 years,4.849,inches,,
+I24H2Y,Maximum 24-hour precipitation that occurs on average once in 2 years,2.866,inches,,
+I24H500Y,Maximum 24-hour precipitation that occurs on average once in 500 years,7.583,inches,,
+I24H50Y,Maximum 24-hour precipitation that occurs on average once in 50 years,5.426,inches,,
+I24H5Y,Maximum 24-hour precipitation that occurs on average once in 5 years,3.537,inches,,
+PRECIP,Mean Annual Precipitation,45.944,inches,,
+SANDGRAVAF,Fraction of land surface underlain by sand and gravel aquifers,0.032,dimensionless,,
+STATSGOA,Percentage of area of Hydrologic Soil Type A from STATSGO,11.71,percent,,
+STORAGE,Percentage of area of storage (lakes ponds reservoirs wetlands),8.1903,percent,,
+STORNWI,Percentage of storage (combined water bodies and wetlands) from the National Wetlands Inventory,8.208,percent,,
+,,,,,
+,,,,,
+Peak-Flow Statistics Parameters,100.0 Percent Statewide multiparameter peakflows SIR 2020 5092,,,,
+Parameter Code,Parameter Name,Value,Units,Min Limit,Max Limit
+DRNAREA,Drainage Area,26.4,square miles,0.26,5680
+I24H100Y,24 Hour 100 Year Precipitation,6.021,inches,3.99,9.88
+I24H10Y,24 Hour 10 Year Precipitation,4.089,inches,2.84,6.38
+I24H200Y,24 Hour 200 YearPrecipitation,6.65,inches,5.26,11.1
+I24H25Y,24 Hour 25 Year Precipitation,4.849,inches,3.3,7.75
+I24H2Y,24 Hour 2 Year Precipitation,2.866,inches,1.92,4.17
+I24H500Y,24 Hour 500 Year Precipitation,7.583,inches,5.95,13.1
+I24H50Y,24 Hour 50 Year Precipitation,5.426,inches,3.65,8.79
+I24H5Y,24 Hour 5 Year Precipitation,3.537,inches,2.48,5.38
+STORAGE,Percent Storage,8.1903,percent,0,29.4
+,,,,,
+Peak-Flow Statistics Flow Report,100.0 Percent Statewide multiparameter peakflows SIR 2020 5092,,,,
+"PIL: Lower 90% Prediction Interval, PIU: Upper 90% Prediction Interval, ASEp: Average Standard Error of Prediction, SE: Standard Error, PC: Percent Correct, RMSE: Root Mean Squared Error, PseudoR^2: Pseudo R Squared (other-- see report)",,,,,
+Statistic,Value,Unit,PIL,PIU,ASEp
+50-percent AEP flood,862,ft^3/s,465,1600,39.1
+20-percent AEP flood,1280,ft^3/s,702,2340,38.1
+10-percent AEP flood,1580,ft^3/s,855,2920,38.9
+4-percent AEP flood,1960,ft^3/s,1050,3670,39.9
+2-percent AEP flood,2270,ft^3/s,1190,4310,39.7
+1-percent AEP flood,2580,ft^3/s,1370,4870,40.7
+0.5-percent AEP flood,2860,ft^3/s,1470,5580,42.8
+0.2-percent AEP flood,3280,ft^3/s,1660,6480,43.8
+,,,,,
+,,,,,
+Annual Flow Statistics Parameters,100.0 Percent Statewide Annual SIR 2015 5151,,,,
+Parameter Code,Parameter Name,Value,Units,Min Limit,Max Limit
+DRNAREA,Drainage Area,26.4,square miles,14.9,1419
+ELEV,Mean Basin Elevation,898,feet,239,2120
+SANDGRAVAF,Fraction of Sand and Gravel Aquifers,0.032,dimensionless,0,0.212
+,,,,,
+Annual Flow Statistics Flow Report,100.0 Percent Statewide Annual SIR 2015 5151,,,,
+Statistic,Value,Unit,ASEp,,
+Mean Annual Flow,59.5,ft^3/s,16,,
+,,,,,
+"USGS Data Disclaimer: Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data for other purposes, nor on all computer systems, nor shall the act of distribution constitute any such warranty.",,,,,
+"USGS Software Disclaimer: This software has been approved for release by the U.S. Geological Survey (USGS). Although the software has been subjected to rigorous review, the USGS reserves the right to update the software as needed pursuant to further analysis and review. No warranty, expressed or implied, is made by the USGS or the U.S. Government as to the functionality of the software and related material nor shall the fact of release constitute any such warranty. Furthermore, the software is released on condition that neither the USGS nor the U.S. Government shall be held liable for any damages resulting from its authorized or unauthorized use.",,,,,
+"USGS Product Names Disclaimer: Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S. Government.",,,,,
+,,,,,
+Application Version: 4.30.0,,,,,
+SSHydro Services Version: 1.0.0,,,,,
+SSDelineate Services Version: 1.0.0,,,,,
+NSS Services Version: 2.2.1,,,,,
+GageStats Services Version: 1.2.1,,,,,
+Pourpoint Services Version: 1.2.0,,,,,
+Batch Processor Services Version: 1.6.0,,,,,
