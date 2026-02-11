@@ -1,9 +1,13 @@
+/* my css styles */
+
 .box {
     display: flex;
     gap: 10px;
+    
 }
 
 
 .right, .left {
+    border: 2px solid;
     
 }
