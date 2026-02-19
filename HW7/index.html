@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW7</title>
     <link rel="stylesheet" href="style.css">
+
+    <!--style>
+        /* Basic styling for the target image */
+        #target-image {
+            display: none; /* Hidden by default */
+            border: 5px solid #333;
+            margin-top: 20px;
+            max-width: 300px;
+        }
+    </style-->
+
+    <style>
+        /* Basic styling for the target image */
+        #target-image {
+            display: none; /* Hidden by default */
+            border: 5px solid #333;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -12,42 +32,46 @@
     <hr>
 
     <div style="margin-top: 0px; margin-left: 50px; margin-bottom: 50px;">
-    <h2 style="margin-top: 0px; margin-left: 0px; margin-bottom: 10px;">
+        <h2 style="margin-top: 0px; margin-left: 0px; margin-bottom: 10px;">
             Part 1 - Flume Controls </h2><br>
 
         <h3 style="margin-top: 0px; margin-left: 0px; margin-bottom: 2px;">
             P.1.0: &nbsp;&nbsp;Sediment Flume Table</h3>
-        
-        <p style="margin-top: 10px; margin-left: 0px; margin-bottom: 2px;">
-            The layout of the sediment flume table (SFT) is shown in Figure 1.  Inlet A appears to provide a steady low flow,<br>
-             while Inlet B supplies the flood flows.  </p>
 
-        <img src="../HW6/SedFlume.png" alt="" style="margin-top: 0px; margin-left: 20px; margin-bottom: 0px; width: 800px"/><br>
+        <p style="margin-top: 10px; margin-left: 0px; margin-bottom: 2px;">
+            The layout of the sediment flume table (SFT) is shown in Figure 1. Inlet A appears to provide a steady low
+            flow,<br>
+            while Inlet B supplies the flood flows. </p>
+
+        <img src="../HW6/SedFlume.png" alt=""
+            style="margin-top: 0px; margin-left: 20px; margin-bottom: 0px; width: 800px" /><br>
         <h4 style="margin-top: 1px; margin-left: 30px; margin-bottom: 20px;">
-            Figure 1. Sediment Flume Table  </h4>
+            Figure 1. Sediment Flume Table </h4>
 
         <h3 style="margin-top: 0px; margin-left: 0px; margin-bottom: 5px;">
             P.1.1 to .1.5: &nbsp;&nbsp;Water Discharge, etc.</h3>
 
         <div class="box">
             <div class="left">
-                <p> <strong>Water Discharge (Q)</strong> via Inlet A (see Figure 1) appears to enter the SFT from<br> 
+                <p> <strong>Water Discharge (Q)</strong> via Inlet A (see Figure 1) appears to enter the SFT from<br>
                     the bottom and is likely controlled by a valve or a variable speed pump.<br>
                     Inlet B appears to be supplied by openings along the upstream wall of the flume <br><br>
                     <strong>Slope (S)</strong> is likely controlled by tiliting the flume by a mechanical means.<br>
                     The bed slope can also self adjust, for example, a sustained flood flow would<br>
                     steepen the bed.<br><br>
-                    <strong>Sediment Discharge from the SFT</strong> was controlled by the outlet valve. To some extent,<br>
+                    <strong>Sediment Discharge from the SFT</strong> was controlled by the outlet valve. To some
+                    extent,<br>
                     the sediment discharge from the table can be controlled by how open/closed the valve is set.
-                </p> 
+                </p>
             </div>
 
             <div class="right">
                 <p> <strong>Sediment Discharge (Qs) - Local:</strong> The local sediment transport rate varies in <br>
-                     reponse to the local flow rate and local bed slope.<br><br>
-                    <strong>Profile:</strong> The bed profile in the SFT is a function of past flow rates and the <br> 
+                    reponse to the local flow rate and local bed slope.<br><br>
+                    <strong>Profile:</strong> The bed profile in the SFT is a function of past flow rates and the <br>
                     erosion/deposition enviroments they produced.<br><br>
-                    <strong>Base Level:</strong> The base level elevation of the flume is controled by the outlet valve.<br>
+                    <strong>Base Level:</strong> The base level elevation of the flume is controled by the outlet
+                    valve.<br>
                     It was unclear to me if the valve was telescoping or has a fixed rim.
                 </p>
             </div>
@@ -55,29 +79,104 @@
     </div>
     <hr>
 
+    <!-- ====================================================================== -->
+    <div style="margin-top: 0px; margin-left: 50px; margin-bottom: 50px;">
 
-<div style="margin-top: 0px; margin-left: 50px; margin-bottom: 50px;">
+    <img src="images/workarea.jpg" 
+        alt="Control Panel" 
+        usemap="#control-map"
+        width="400px" 
+        height="360px">
 
-    <h2>Click the button to display the image:</h2>
+    <map name="control-map">
+        <area shape="rect" 
+            coords="65px,98px,123px,125px" 
+            href="#;"
+            onclick="openImage()"
+            alt="Open Image" 
+            >
+
+        <area shape="rect" 
+            coords="124px,98px,192px,125px" 
+            alt="Close Image" 
+            href="#;"
+            onclick="closeImage()">
+    </map>
+    
+    <div>
+        <img id="target-image" src="images/workzone1.jpg" alt="Hidden Content" 
+        style="margin-top: -360px; margin-left: 450px; margin-bottom: 0px; width: 300px" >
+    </div>    
+    
+    <script>
+        function openImage() {
+        document.getElementById('target-image').style.display = 'block';
+        }
+
+        function closeImage() {
+        document.getElementById('target-image').style.display = 'none';
+        }
+    </script><br>
+    </div>
+    <hr>
+    <br><br><br>
+    <hr>
+
+    
+    
+    <!-- ====================================================================== 
+
+    <h2>Clickable Map Example</h2>
+    <p>Click an area below to display a corresponding image.</p>
+
+    <img src="images/workarea.jpg" alt="Original map" usemap="#map_shapes1" width="400px" height="360px">
+
+    <map name="map_shapes1">
+        <area 
+        shape="rect" 
+        coords="65,98,192,125" 
+        alt="Area 1" 
+        href="./new.html"
+        >
+
+        <area 
+        shape="rect" coords="260,98,390,125" alt="Area 2" 
+        href="./hw7A.html"
+        >
+
+    </map>
+
+    ======================================================================= -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ====================================================================== -->
+
+    <!-- div style="margin-top: 0px; margin-left: 50px; margin-bottom: 50px;">
+
+</div-->
+
+    <!-- ================================================================== -->
+    <!--h2>Click the button to display the image:</h2-->
     <!-- The button calls the JavaScript function -->
-    <button onclick="displayImage()">Display Image</button>
+    <!--button onclick="displayImage()">Display Image</button-->
 
     <!-- The <img> element where the image will be displayed -->
-    <img src="" id="imagePlaceholder" alt="Placeholder for local image" width="300">
+    <!--img src="" id="imagePlaceholder" alt="Placeholder for local image" width="300"-->
 
     <!-- Link to your JavaScript file -->
-    <script src="script.js"></script>
+    <!--script src="script.js"></script-->
 
 
-
-</div>
-
-
-
-
-
-
-        <!--p style="margin-top: 0px; margin-left: 10px; margin-bottom: 2px;">
+    <!--p style="margin-top: 0px; margin-left: 10px; margin-bottom: 2px;">
                 See .<br>
                 matrix. </p><br>
 
@@ -86,13 +185,14 @@
         </video><br-->
 
 
-                
-        <!-- <video controls  width=1000px style="margin-left: 20px; margin-bottom: 0px;"   >
+
+    <!-- <video controls  width=1000px style="margin-left: 20px; margin-bottom: 0px;"   >
             <source src="../HW5/Rock_Log_Eddy.mp4" type="video/mp4" >
         </video><br>         -->
 
-    </div>
+
 
 
 </body>
+
 </html>

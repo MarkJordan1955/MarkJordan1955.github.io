@@ -1,8 +1,18 @@
-function displayImage() {
-    // Get the image element by its ID
-    const imageElement = document.getElementById("imagePlaceholder");
+function showImage() {
+  // Create a new image element
+  const img = document.createElement("img");
+  
+  // Set the source (URL or file path) and other attributes
+  img.src = "images/workplace.jpg";
+  img.alt = "A description of the image";
+  img.width = 300; 
 
-    // Set the src attribute to the relative path of your image file
-    // Assumes the image is in an 'images' folder in the same directory
-    imageElement.src = "images/my_picture.jpg";
+  // Append the new image element to the container
+  document.getElementById("imageContainer").appendChild(img);
 }
+
+// Call the function to display the image when the script runs
+showImage();
+
+
+
