@@ -3,10 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>new page</title>
+    <title>xs 1 page</title>
 </head>
 <body>
-    <h1>Page HW7_A</h1>
+    <h2 style="margin-top: 0px; margin-left: 0px; margin-bottom: 0px;">
+        Part 2 - XS-1</h2><br>
+            
+        <h3 style="margin-top: 0px; margin-left: 0px; margin-bottom: 60px;">
+            Bank and bed cross-section changes from 2003 to 2006. <br>
+            Click on date buttons (at top of figure) to display geomorphic change for given period.</h3><br>
+
+
+    <!-- ====================================================================== -->
+    <div style="margin-top: 0px; margin-left: 50px; margin-bottom: 50px;">
+
+        <img src="images/page_2A.jpg" 
+            alt="Control Panel" 
+            usemap="#control-map1"
+            width="208px" 
+            height="294px">
+
+        <map name="control-map1">
+            <area shape="rect" 
+                coords="1px,1px,68px,24px" 
+                alt="Open Image 1" 
+                href="#;"
+                onclick="openImage1()">
+
+            <area shape="rect" 
+                coords="70px,1px,137px,24px" 
+                alt="Open Image 2"
+                href="#;"
+                onclick="openImage2()">
+            
+            <area shape="rect" 
+                coords="139px,1px,207px,24px" 
+                alt="Open Image 3" 
+                href="#;"
+                onclick="openImage3()">
+        </map>
+
+        <div id="text_2003-04"; style="display: none">
+            <p style="margin-top: 8px; margin-left: 0px; margin-bottom: 2px;">
+                The scour hole and river-right bank erosion that developed between 2003 and 2004 resuled in local bed erosion of <br>
+                54 cu.m +/-29% and 17cu.m +/-38%, respectively.  These same two features resuleted in lower, local, average bed elevations of <br> 
+                0.75 m +/-29% and 0.27 m +/-38%, respectively. </p>
+        </div>
+        <div id="text_2004-05"; style="display: none">
+            <p style="margin-top: 4px; margin-left: 0px; margin-bottom: 2px;">
+                Describe GCD for  <br>
+                2003- 04. </p>
+        </div>
+        <div id="text_2005-06"; style="display: none">
+            <p style="margin-top: 4px; margin-left: 0px; margin-bottom: 2px;">
+                Describe GCD for  <br>
+                2003- 04. </p>
+        </div>
+    
+        <div>
+            <img id="target-image1" src="images/xs1_2003-04.jpg" alt="Hidden Content" 
+            style="margin-top: -410px; margin-left: 230px; margin-bottom: 10px; height: 350px; display: none" >
+        </div>    
+        <div>
+            <img id="target-image2" src="images/xs1_2004-05.jpg" alt="Hidden Content" 
+            style="margin-top: -400px; margin-left: 230px; margin-bottom: 10px; height: 350px; display: none" >
+        </div>
+        <div>
+            <img id="target-image3" src="images/xs1_2005-06.jpg" alt="Hidden Content" 
+            style="margin-top: -400px; margin-left: 230px; margin-bottom: 10px; height: 350px; display: none" >
+        </div>
+
+        <script>
+            function openImage1() {
+                document.getElementById('target-image1').style.display = 'block'; 
+                document.getElementById('text_2003-04').style.display = 'block';
+                document.getElementById('target-image2').style.display = 'none'; 
+                document.getElementById('text_2004-05').style.display = 'none';
+                document.getElementById('target-image3').style.display = 'none'; 
+                document.getElementById('text_2005-06').style.display = 'none';
+            }
+
+            function openImage2() {
+                document.getElementById('target-image1').style.display = 'none';
+                document.getElementById('text_2003-04').style.display = 'none';
+                document.getElementById('target-image2').style.display = 'block'; 
+                document.getElementById('text_2004-05').style.display = 'block';
+                document.getElementById('target-image3').style.display = 'none'; 
+                document.getElementById('text_2005-06').style.display = 'none';
+            }
+            
+            function openImage3() {
+                document.getElementById('target-image1').style.display = 'none';
+                document.getElementById('text_2003-04').style.display = 'none';
+                document.getElementById('target-image2').style.display = 'none';
+                document.getElementById('text_2004-05').style.display = 'none';
+                document.getElementById('target-image3').style.display = 'block'; 
+                document.getElementById('text_2005-06').style.display = 'block';
+            }
+
+        </script><br>
+    </div>
+    <hr>
+    <!-- =========================================================== -->
+
+    <h3>Click on page name (below) to go there!</h3>
+    <a href="../HW7/hw7B.html"><h3>xs4 page</h3></a>
+    <a href="../HW7/"><h3>main page</h3></a>
+
+
+
 </body>
 </html>
 

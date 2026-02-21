@@ -28,59 +28,59 @@
 </head>
 
 <body>
-    <h1>Homework 7 - Fluvial Geomorphic Processes:</h1>
+    <h1>Homework 7 - Topographic Changes:</h1>
+
+    <script>
+        var fig1_counter = 0
+    </script>
     <hr>
 
     <div style="margin-top: 0px; margin-left: 50px; margin-bottom: 50px;">
-        <h2 style="margin-top: 0px; margin-left: 0px; margin-bottom: 10px;">
-            Part 1 - Flume Controls </h2><br>
+        <h2 style="margin-top: 0px; margin-left: 0px; margin-bottom: 0px;">
+            Preamble: </h2><br>
 
-        <h3 style="margin-top: 0px; margin-left: 0px; margin-bottom: 2px;">
-            P.1.0: &nbsp;&nbsp;Sediment Flume Table</h3>
-
-        <p style="margin-top: 10px; margin-left: 0px; margin-bottom: 2px;">
-            The layout of the sediment flume table (SFT) is shown in Figure 1. Inlet A appears to provide a steady low
-            flow,<br>
-            while Inlet B supplies the flood flows. </p>
-
-        <img src="../HW6/SedFlume.png" alt=""
-            style="margin-top: 0px; margin-left: 20px; margin-bottom: 0px; width: 800px" /><br>
-        <h4 style="margin-top: 1px; margin-left: 30px; margin-bottom: 20px;">
-            Figure 1. Sediment Flume Table </h4>
-
-        <h3 style="margin-top: 0px; margin-left: 0px; margin-bottom: 5px;">
-            P.1.1 to .1.5: &nbsp;&nbsp;Water Discharge, etc.</h3>
-
-        <div class="box">
-            <div class="left">
-                <p> <strong>Water Discharge (Q)</strong> via Inlet A (see Figure 1) appears to enter the SFT from<br>
-                    the bottom and is likely controlled by a valve or a variable speed pump.<br>
-                    Inlet B appears to be supplied by openings along the upstream wall of the flume <br><br>
-                    <strong>Slope (S)</strong> is likely controlled by tiliting the flume by a mechanical means.<br>
-                    The bed slope can also self adjust, for example, a sustained flood flow would<br>
-                    steepen the bed.<br><br>
-                    <strong>Sediment Discharge from the SFT</strong> was controlled by the outlet valve. To some
-                    extent,<br>
-                    the sediment discharge from the table can be controlled by how open/closed the valve is set.
-                </p>
-            </div>
-
-            <div class="right">
-                <p> <strong>Sediment Discharge (Qs) - Local:</strong> The local sediment transport rate varies in <br>
-                    reponse to the local flow rate and local bed slope.<br><br>
-                    <strong>Profile:</strong> The bed profile in the SFT is a function of past flow rates and the <br>
-                    erosion/deposition enviroments they produced.<br><br>
-                    <strong>Base Level:</strong> The base level elevation of the flume is controled by the outlet
-                    valve.<br>
-                    It was unclear to me if the valve was telescoping or has a fixed rim.
-                </p>
-            </div>
-        </div>
+        <p style="margin-top: 4px; margin-left: 0px; margin-bottom: 2px;">
+            Homework 7 has been conducted using the Geomormphic Change Dection Software (stand-alone package), QGIS and <br>
+            Microsoft Excel.  I do not have access to ArcGIS. </p>
+        
     </div>
     <hr>
 
-    <!-- ====================================================================== -->
     <div style="margin-top: 0px; margin-left: 50px; margin-bottom: 50px;">
+        <h2 style="margin-top: 0px; margin-left: 0px; margin-bottom: 0px;">
+            Part 1 - Build Project & Budget Segregation: </h2><br>
+
+        <p style="margin-top: 4px; margin-left: 0px; margin-bottom: 5px;">
+            The homework . . . <br><br>
+            In Figure 1, click on labeled gray arrows with red borders to go to a new page and explore selected changes at <br>
+            designated cross-section (xs). </p>
+
+        <img src="images/page_1A.jpg" alt="XS map" usemap="#map_shapes1" width="682px" height="357px">
+
+        <map name="map_shapes1">
+            <area 
+            shape="rect" 
+            coords="407,159,459,203" 
+            alt="Area 1" 
+            href="./hw7A.html"
+            >
+
+            <area 
+            shape="rect" 
+            coords="407,243,459,286"
+            alt="Area 2" 
+            href="./hw7B.html"
+            >
+        </map>
+
+    </div>
+    <hr>
+
+
+
+
+    <!-- ====================================================================== -->
+    <!-- <div style="margin-top: 0px; margin-left: 50px; margin-bottom: 50px;">
 
     <img src="images/workarea.jpg" 
         alt="Control Panel" 
@@ -90,43 +90,81 @@
 
     <map name="control-map">
         <area shape="rect" 
-            coords="65px,98px,123px,125px" 
-            href="#;"
-            onclick="openImage()"
-            alt="Open Image" 
-            >
-
-        <area shape="rect" 
             coords="124px,98px,192px,125px" 
             alt="Close Image" 
             href="#;"
-            onclick="closeImage()">
+            onclick="closeImage1()">
+
+        <area shape="rect" 
+            coords="65px,98px,123px,125px" 
+            alt="Open Image"
+            href="#;"
+            onclick="openImage1()">
+        
+        <area shape="rect" 
+            coords="325px,98px,390px,125px" 
+            alt="Close Image" 
+            href="#;"
+            onclick="closeImage2()">
+
+        <area shape="rect" 
+            coords="260px,98px,324px,125px" 
+            alt="Open Image"
+            href="#;"
+            onclick="openImage2()">
     </map>
     
     <div>
-        <img id="target-image" src="images/workzone1.jpg" alt="Hidden Content" 
-        style="margin-top: -360px; margin-left: 450px; margin-bottom: 0px; width: 300px" >
+        <img id="target-image1" src="images/workzone1.jpg" alt="Hidden Content" 
+        style="margin-top: -360px; margin-left: 450px; margin-bottom: 0px; width: 300px; display: none" >
     </div>    
-    
+    <div>
+        <img id="target-image2" src="images/workzone2.jpg" alt="Hidden Content" 
+        style="margin-top: -360px; margin-left: 450px; margin-bottom: 0px; width: 300px; display: none" >
+    </div>
+
     <script>
-        function openImage() {
-        document.getElementById('target-image').style.display = 'block';
+        function openImage1() {
+            fig1_counter = fig1_counter + 1
+            if (fig1_counter === 1) {
+                document.getElementById('target-image1').style.display = 'block'; 
+                document.getElementById('target-image2').style.display = 'none'; 
+            } else if (fig1_counter === 2) {
+                document.getElementById('target-image2').style.display = 'block'; 
+                document.getElementById('target-image1').style.display = 'none';             
+            } else {
+                fig1_counter = 0
+                document.getElementById('target-image1').style.display = 'none'; 
+                document.getElementById('target-image2').style.display = 'none';                 
+            }
         }
 
-        function closeImage() {
-        document.getElementById('target-image').style.display = 'none';
+        function closeImage1() {
+        document.getElementById('target-image1').style.display = 'none';
+        }
+        
+        function openImage2() {
+        document.getElementById('target-image2').style.display = 'block';
+        document.getElementById('target-image1').style.display = 'none';
+        }
+
+        function closeImage2() {
+        document.getElementById('target-image2').style.display = 'none';
         }
     </script><br>
     </div>
-    <hr>
-    <br><br><br>
-    <hr>
+    <hr> -->
+    <!-- =========================================================== -->
 
+ 
+    <!-- ======= ___ VIDEO ___ ============================================================================ -->
+    <!-- <video controls  width=800px style="margin-left: 20px; margin-bottom: 0px;"   >
+            <source src="videos/test_video.mp4" type="video/mp4" >
+        </video><br> -->    
     
-    
-    <!-- ====================================================================== 
 
-    <h2>Clickable Map Example</h2>
+    <!-- ======= __ OPEN NEW WEB PAGE FROM A MAP __ ======================================================= -->
+    <!-- <h2>Clickable Map Example</h2>
     <p>Click an area below to display a corresponding image.</p>
 
     <img src="images/workarea.jpg" alt="Original map" usemap="#map_shapes1" width="400px" height="360px">
@@ -136,28 +174,16 @@
         shape="rect" 
         coords="65,98,192,125" 
         alt="Area 1" 
-        href="./new.html"
-        >
-
-        <area 
-        shape="rect" coords="260,98,390,125" alt="Area 2" 
         href="./hw7A.html"
         >
 
-    </map>
-
-    ======================================================================= -->
-
-
-
-
-
-
-
-
-
-
-
+        <area 
+        shape="rect" 
+        coords="260,98,390,125"
+        alt="Area 2" 
+        href="./hw7B.html"
+        >
+    </map> -->
     <!-- ====================================================================== -->
 
     <!-- div style="margin-top: 0px; margin-left: 50px; margin-bottom: 50px;">
@@ -189,7 +215,6 @@
     <!-- <video controls  width=1000px style="margin-left: 20px; margin-bottom: 0px;"   >
             <source src="../HW5/Rock_Log_Eddy.mp4" type="video/mp4" >
         </video><br>         -->
-
 
 
 
